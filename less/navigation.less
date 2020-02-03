@@ -1,0 +1,110 @@
+nav {
+    padding: 8px 16px;
+
+    .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @media @tablet {
+        }
+
+        li {
+            a {
+                color: @nav-links;
+                text-decoration: none;
+                display: block;
+
+                &:hover{
+                    color: @secondary-color;
+                } // End a:hover
+            } // End a
+
+            @media @desktop {
+                padding: 15px 10px;
+            }
+        } // End li
+
+        .logo {
+            @media @tablet {
+                flex: 1;
+            }
+
+            @media @desktop {
+                order: 0;
+            }
+
+            a {
+                font-family: @header-font;
+                font-size: 3rem;
+                color: @secondary-color;
+            } // End logo a
+        } // End logo
+      
+
+        .toggle {
+            order: 1;
+            margin-left: 16px;
+            cursor: pointer;
+
+            .fas.fa-bars {
+                font-size: 2rem;
+            }
+
+            @media @tablet {
+                order: 2;
+            }
+
+            @media @desktop {
+                display: none;
+            }
+        } // End toggle
+
+        .item.button {
+            order: 2;
+            
+            @media @tablet {
+                width: auto;
+                order: 1;
+                display: block;
+            }
+
+        } // End .item.button
+
+        .button a {
+            @media @tablet {
+                padding: 7px 15px;
+                color: @font-color;
+                background-color: @primary-color;
+                border-radius: 8px;
+                &:hover {
+                    transition: background-color .4s;
+                    background-color: #E58844;
+                    color: @font-color;
+                }
+            }
+        } // End button a
+
+        .item {
+            width: 100%;
+            text-align: center;
+            order: 3;
+            display: none;
+
+            @media @desktop {
+                display: block;
+                width: auto;
+                order: 1;
+            }
+        } // End item
+
+        .item.active {
+            display: block;
+        }
+
+        
+
+    } // End topnav
+
+} // End nav
