@@ -1,3 +1,84 @@
+.hero-image {
+    background: linear-gradient(112.14deg, #014A73 -11.7%, rgba(255, 255, 255, 0) 174.44%), url("https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @media @desktop {
+        height: 55vh;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 30%;
+        margin-left: 5%;
+
+        @media @desktop {
+            margin-left: 10%;
+        }
+
+        h1 {
+            font-size: 3.6rem;
+            color: @white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+            margin-bottom: 12px;
+
+            @media @tablet {
+                font-size: 4.8rem;
+            }
+
+            @media @desktop {
+                font-size: 6.4rem;
+            }
+        }
+        
+        .button {
+            .button(8px 20px, 1.8rem);
+            margin-right: 16px;
+        }
+    }
+}
+
+.intro {
+    margin: 40px 0;
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    
+        @media @desktop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .main-text {
+            @media @desktop {
+                width: 48%;
+            }
+        }
+    
+        .main-img {
+            @media @desktop {
+                width: 48%;
+                height: auto;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 16px;
+
+        @media @tablet {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+
 .how-it-works {
     background-color: @secondary-bg;
     padding: 20px 0 48px;;

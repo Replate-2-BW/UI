@@ -164,6 +164,7 @@ h3,
 h4 {
   font-family: 'Baloo Bhai', sans-serif;
   padding: 16px 0;
+  color: #014A73;
 }
 h1 {
   font-size: 4.8rem;
@@ -390,6 +391,92 @@ address p {
 @media (min-width: 801px) {
   .bottom-cta .button {
     margin: 48px 0 72px;
+  }
+}
+.hero-image {
+  background: linear-gradient(112.14deg, #014A73 -11.7%, rgba(255, 255, 255, 0) 174.44%), url("https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (min-width: 801px) {
+  .hero-image {
+    height: 55vh;
+  }
+}
+.hero-image .hero-text {
+  position: absolute;
+  top: 30%;
+  margin-left: 5%;
+}
+@media (min-width: 801px) {
+  .hero-image .hero-text {
+    margin-left: 10%;
+  }
+}
+.hero-image .hero-text h1 {
+  font-size: 3.6rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
+}
+@media (min-width: 501px) {
+  .hero-image .hero-text h1 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 801px) {
+  .hero-image .hero-text h1 {
+    font-size: 6.4rem;
+  }
+}
+.hero-image .hero-text .button {
+  border-radius: 8px;
+  padding: 8px 20px;
+  background-color: #FF974C;
+  color: #111121;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin-right: 16px;
+}
+.hero-image .hero-text .button:hover {
+  transition: background-color 0.4s;
+  background-color: #E58844;
+}
+.intro {
+  margin: 40px 0;
+}
+.intro .main {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 801px) {
+  .intro .main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 801px) {
+  .intro .main .main-text {
+    width: 48%;
+  }
+}
+@media (min-width: 801px) {
+  .intro .main .main-img {
+    width: 48%;
+    height: auto;
+  }
+}
+.intro h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 16px;
+}
+@media (min-width: 501px) {
+  .intro h3 {
+    font-size: 2.4rem;
   }
 }
 .how-it-works {
