@@ -201,6 +201,7 @@ img {
 @media (min-width: 801px) {
   .content-wrapper {
     width: 80%;
+    max-width: 1248px;
   }
 }
 nav {
@@ -410,6 +411,7 @@ address p {
 @media (min-width: 801px) {
   .contact {
     width: 70%;
+    max-width: 700px;
     padding: 24px 52px;
   }
 }
@@ -565,6 +567,7 @@ address p {
   .how-it-works .explainer {
     flex-direction: row;
     width: 80%;
+    max-width: 1248px;
   }
 }
 .how-it-works .explainer .explainer-step {
@@ -611,6 +614,7 @@ address p {
 @media (min-width: 801px) {
   .impact section {
     width: 80%;
+    max-width: 1248px;
   }
 }
 .impact .data {
