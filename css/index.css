@@ -163,6 +163,7 @@ h2,
 h3,
 h4 {
   font-family: 'Baloo Bhai', sans-serif;
+  padding: 16px 0;
 }
 h1 {
   font-size: 4.8rem;
@@ -360,7 +361,7 @@ address p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 48px 0;
+  margin-bottom: 48px;
 }
 .bottom-cta h2 {
   color: #FFFFFF;
@@ -389,5 +390,56 @@ address p {
 @media (min-width: 801px) {
   .bottom-cta .button {
     margin: 48px 0 72px;
+  }
+}
+.how-it-works {
+  background-color: #EAF5FF;
+  padding: 20px 0 48px;
+}
+.how-it-works h2 {
+  text-align: center;
+}
+.how-it-works .explainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 95%;
+}
+@media (min-width: 501px) {
+  .how-it-works .explainer {
+    width: 90%;
+  }
+}
+@media (min-width: 801px) {
+  .how-it-works .explainer {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+.how-it-works .explainer .explainer-step {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+}
+@media (min-width: 801px) {
+  .how-it-works .explainer .explainer-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.how-it-works .explainer .explainer-step p {
+  font-size: 1.4rem;
+  margin: 0 16px;
+}
+.how-it-works .explainer .explainer-step img {
+  width: 40px;
+}
+@media (min-width: 801px) {
+  .how-it-works .explainer .explainer-step img {
+    margin: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #111121;
   }
 }
