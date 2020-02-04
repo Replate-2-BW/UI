@@ -169,6 +169,7 @@ h1 {
 }
 h2 {
   font-size: 3.6rem;
+  line-height: 1.4;
 }
 h3 {
   font-size: 3rem;
@@ -339,4 +340,40 @@ address p {
   text-align: center;
   color: #A6A6A6;
   margin: 12px 0;
+}
+.bottom-cta {
+  background: #014A73;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 48px 0;
+}
+.bottom-cta h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 48px;
+  width: 90%;
+}
+@media (min-width: 801px) {
+  .bottom-cta h2 {
+    margin-top: 72px;
+  }
+}
+.bottom-cta .button {
+  border-radius: 8px;
+  padding: 8px 20px;
+  background-color: #FF974C;
+  color: #111121;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 48px 0;
+}
+.bottom-cta .button:hover {
+  transition: background-color 0.4s;
+  background-color: #E58844;
+}
+@media (min-width: 801px) {
+  .bottom-cta .button {
+    margin: 48px 0 72px;
+  }
 }

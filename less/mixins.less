@@ -1,0 +1,13 @@
+// Button Mixin
+.button(@padding, @font-size, @bg-color: @primary-color, @hover-color: @primary-hover-color, @color: @font-color) {
+    border-radius: 8px;
+    padding: @padding;
+    background-color: @bg-color;
+    color: @color;
+    font-size: @font-size;
+    text-decoration: none;
+    &:hover {
+        transition: background-color .4s;
+        background-color: @hover-color;
+    }
+}

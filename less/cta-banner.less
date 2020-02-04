@@ -1,0 +1,27 @@
+.bottom-cta {
+    background: @secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0;
+    
+    h2 {
+        color: @white;
+        text-align: center;
+        margin-top: 48px;
+        width: 90%;
+
+        @media @desktop {
+            margin-top: 72px;
+        }
+    }
+
+    .button {
+        .button(8px 20px, 2rem);
+        margin: 48px 0;
+
+        @media @desktop {
+            margin: 48px 0 72px;
+        }
+    }
+}
