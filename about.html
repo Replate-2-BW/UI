@@ -32,32 +32,56 @@
 
         <!--Begin Main Section-->
         <div class="content-wrapper">
-
             <!--Begin About Section-->
-            <section>
-                <img src="#">
-                <h2>Headline</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo vel orci porta non. Egestas dui id ornare arcu odio ut sem. Sit amet aliquam id diam maecenas. Feugiat vivamus at augue eget arcu dictum varius. Vitae sapien pellentesque habitant morbi tristique senectus et netus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor id eu nisl nunc mi.</p> <!--Or should this be h3?-->
+            <section class=intro>
+                <div class="main">
+                    <div class="main-img">
+                        <img src="img/potluck.jpg">
+                    </div>
+                    <div class="main-text">
+                        <h2>Headline</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo vel orci porta non. Egestas dui id ornare arcu odio ut sem. Sit amet aliquam id diam maecenas. Feugiat vivamus at augue eget arcu dictum varius. Vitae sapien pellentesque habitant morbi tristique senectus et netus.</p>
+                    </div>
+                </div>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor id eu nisl nunc mi.</h3> <!--Or should this be h3?-->
             </section>
             <!--End About Section-->
+        </div> <!--End First Wrapper-->
 
             <!--Begin Impact Section-->
-            <section>
-                <h2>Our Impact</h2>
-                <p>Scelerisque felis imperdiet proin fermentum leo vel orci porta non. Egestas dui id ornare arcu odio ut sem.</p>
+            <div class="impact">
+                <section>
+                    <h2>Our Impact</h2>
+                    <p>Scelerisque felis imperdiet proin fermentum leo vel orci porta non. Egestas dui id ornare arcu odio ut sem.</p>
 
-                <p>200k</p>
-                <p>Sit amet aliquam id diam maecenas</p>
-                <p>200k</p>
-                <p>Sit amet aliquam id diam maecenas</p>
-                <p>200k</p>
-                <p>Sit amet aliquam id diam maecenas</p>
-                <p>200k</p>
-                <p>Sit amet aliquam id diam maecenas</p>
-            </section>
+                    <div class="data">
+                        <div class="row">
+                            <div>
+                                <h3>200k</h3>
+                                <p>Sit amet aliquam</p>
+                            </div>
+                            <div>
+                                <h3>200k</h3>
+                                <p>Sit amet aliquam</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <h3>200k</h3>
+                                <p>Sit amet aliquam</p>
+                            </div>
+                            <div>
+                                <h3>200k</h3>
+                                <p>Sit amet aliquam</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <!--End Impact Section-->
 
+        <!--Begin Second Wrapper-->    
+        <div class="content-wrapper"> 
             <!--Begin Team Section-->
             <section>
                 <h2>Meet the Team</h2>
@@ -67,30 +91,34 @@
                 <img src="#">
             </section>
             <!--End Team Section-->
-
+   
             <!--Begin Contact Form-->
-            <h3>Contact Us</h3>
-            <p>Elit ullamcorper dignissim cras tincidunt lobortis.</p>
+            <section class="contact">
+                <h3>Contact Us</h3>
+                <p>Elit ullamcorper dignissim cras tincidunt lobortis.</p>
 
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name">
+                <form>
+                    <label for="name">Name</label><br/>
+                    <input type="text" id="name"><br/>
 
-                <label for="email">Email</label>
-                <input type="text" id="email">
+                    <label for="email">Email</label><br/>
+                    <input type="text" id="email"><br/>
 
-                <label for="topic">What do you need help with?</label>
-                <select id="topic">
-                    <option value="volunteer">I want to volunteer with Replate</option>
-                    <option value="business">I want my business to work with Replate</option>
-                    <option value="nonprofit">My nonprofit is looking for food donations</option>
-                    <option value="help">I need help using the app</option>
-                    <option value="other">Other...</option>
-                </select>
+                    <label for="topic">What's this about?</label><br/>
+                    <select id="topic">
+                        <option value="volunteer">I'm interested in volunteering with Replate</option>
+                        <option value="business">My company is interested in partnering with Replate</option>
+                        <option value="nonprofit">My nonprofit is looking for food donations</option>
+                        <option value="help">I need help using the app</option>
+                        <option value="other">Other...</option>
+                    </select><br/>
 
-                <label for="message">Tell us more!</label>
-                <textarea id="message"></textarea>
-            </form>
+                    <label for="message">Tell us more!</label><br/>
+                    <textarea id="message"></textarea><br/>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
             <!--End Conctact Form-->
 
         </div>

@@ -1,0 +1,54 @@
+.impact {
+    background-color: @secondary-bg;
+    text-align: center;
+    padding: 24px 0 20px;
+    
+    section {
+        width: 95%;
+        margin: auto;
+
+        @media @tablet {
+            width: 90%;
+        }
+
+        @media @desktop {
+            width: 80%;
+    }
+    }
+
+    .data {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0 24px;
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            @media @desktop {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            div {
+                padding-bottom: 16px;
+
+                p {
+                    color: @secondary-color;
+                    font-weight: 500;
+                }
+
+                h3 {
+                    padding-bottom: 4px;
+                    @media @tablet {
+                        font-size: 5.6rem;
+                    }
+                }
+            }
+        }
+        
+
+        
+    }
+}
