@@ -672,3 +672,27 @@ address p {
 .clients .logos img {
   padding: 16px;
 }
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px 0;
+}
+.testimonial img {
+  width: 200px;
+  border-radius: 50%;
+}
+.testimonial p {
+  padding-top: 12px;
+}
+.testimonial .quote {
+  font-family: 'Baloo Bhai', sans-serif;
+  color: #014A73;
+}
+.testimonial .name {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-right: 12px;
+}
