@@ -360,6 +360,81 @@ address p {
   color: #A6A6A6;
   margin: 12px 0;
 }
+.get-started {
+  background-color: #014A73;
+  padding: 28px 2.5% 48px;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 501px) {
+  .get-started {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+  }
+}
+@media (min-width: 801px) {
+  .get-started {
+    width: 80%;
+    max-width: 1248px;
+  }
+}
+.get-started h2 {
+  color: #FFFFFF;
+  text-align: center;
+}
+.get-started p {
+  color: #FFFFFF;
+  padding-bottom: 12px;
+}
+@media (min-width: 801px) {
+  .get-started p {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+}
+.get-started .circle {
+  counter-reset: item;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 801px) {
+  .get-started .circle {
+    flex-flow: row wrap;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 801px) {
+  .get-started .circle div {
+    width: 50%;
+  }
+}
+.get-started .circle div li {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  padding: 8px;
+}
+@media (min-width: 501px) {
+  .get-started .circle div li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+.get-started .circle div > li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+.get-started .circle div > li:before {
+  margin-right: 12px;
+  content: counter(item);
+  background: #FF974C;
+  border-radius: 100%;
+  color: white;
+  width: 1.3em;
+  text-align: center;
+  display: inline-block;
+}
 .bottom-cta {
   background: #014A73;
   display: flex;
