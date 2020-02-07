@@ -441,16 +441,27 @@ address p {
   flex-direction: column;
   align-items: center;
   margin-bottom: 48px;
+  padding-bottom: 72px;
 }
 .bottom-cta h2 {
   color: #FFFFFF;
   text-align: center;
   margin-top: 48px;
+  margin-bottom: 48px;
   width: 90%;
 }
 @media (min-width: 801px) {
   .bottom-cta h2 {
     margin-top: 72px;
+  }
+}
+.bottom-cta div {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 501px) {
+  .bottom-cta div {
+    flex-direction: row;
   }
 }
 .bottom-cta .button {
@@ -460,15 +471,16 @@ address p {
   color: #111121;
   font-size: 2rem;
   text-decoration: none;
-  margin: 48px 0;
+  margin-bottom: 24px;
+  text-align: center;
 }
 .bottom-cta .button:hover {
   transition: background-color 0.4s;
   background-color: #E58844;
 }
-@media (min-width: 801px) {
+@media (min-width: 501px) {
   .bottom-cta .button {
-    margin: 48px 0 72px;
+    margin: 0 24px 24px;
   }
 }
 .contact {
@@ -548,7 +560,7 @@ address p {
 }
 .hero-image .hero-text {
   position: absolute;
-  top: 30%;
+  top: 20%;
   margin-left: 5%;
 }
 @media (min-width: 501px) {
@@ -565,7 +577,7 @@ address p {
   font-size: 3.6rem;
   color: #FFFFFF;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-  margin-bottom: 12px;
+  margin-bottom: 0 16px 8px;
 }
 @media (min-width: 501px) {
   .hero-image .hero-text h1 {
@@ -578,18 +590,35 @@ address p {
     width: 70%;
   }
 }
-.hero-image .hero-text .button {
+.hero-image .hero-text div {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 501px) {
+  .hero-image .hero-text div {
+    flex-direction: row;
+  }
+}
+.hero-image .hero-text div .button {
   border-radius: 8px;
   padding: 8px 20px;
   background-color: #FF974C;
   color: #111121;
   font-size: 1.8rem;
   text-decoration: none;
-  margin-right: 16px;
+  width: 50%;
+  margin-bottom: 12px;
+  text-align: center;
 }
-.hero-image .hero-text .button:hover {
+.hero-image .hero-text div .button:hover {
   transition: background-color 0.4s;
   background-color: #E58844;
+}
+@media (min-width: 501px) {
+  .hero-image .hero-text div .button {
+    width: auto;
+    margin-right: 24px;
+  }
 }
 .intro {
   margin: 40px 0;

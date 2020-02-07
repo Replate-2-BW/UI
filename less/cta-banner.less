@@ -4,11 +4,13 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 48px;
+    padding-bottom: 72px;
     
     h2 {
         color: @white;
         text-align: center;
         margin-top: 48px;
+        margin-bottom: 48px;
         width: 90%;
 
         @media @desktop {
@@ -16,12 +18,26 @@
         }
     }
 
+    div {
+        display: flex;
+        flex-direction: column;
+
+        @media @tablet {
+            flex-direction: row;
+        }
+
+        
+    }
+
     .button {
         .button(8px 20px, 2rem);
-        margin: 48px 0;
+        margin-bottom: 24px;
+        text-align: center;
 
-        @media @desktop {
-            margin: 48px 0 72px;
+        @media @tablet {
+            margin: 0 24px 24px;
         }
     }
+
+    
 }
